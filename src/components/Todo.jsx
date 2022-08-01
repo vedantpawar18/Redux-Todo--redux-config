@@ -1,20 +1,20 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector, shallowEqual } from 'react-redux'
-import { addTodoFailure,addTodoRequest, addTodoSuccess,todosRequest, todosFailure,  todosSuccess } from '../Redux/action'
+import { addTodoFailure,addTodoRequest, addTodoSuccess,todosRequest, todosFailure,  todosSuccess } from '../Redux/AppReducer/action'
 import TodoInput from './TodoInput'
 
 const Todo = () => {
 
     const dispatch= useDispatch();
     const {todos, isLoading, isError}= useSelector(store=> {return {
-        todos:store.todos,
-        isLoading:store.isLoading,
-        isError: store.isError
+        todos:store.AppReducer.todos,
+        isLoading:store.AppReducer.isLoading,
+        isError: store.AppReducer.isError
     }
     }, shallowEqual);
 
-    console.log(todos)
+    // console.log(todos)
     
 
     const getTodos = () =>{

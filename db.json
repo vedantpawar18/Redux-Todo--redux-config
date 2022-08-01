@@ -1,13 +1,8 @@
 {
   "todos": [
     {
-      "title": "blue",
-      "status": false,
-      "id": 4
-    },
-    {
       "title": "green",
-      "status": false,
+      "status": true,
       "id": 5
     },
     {
@@ -19,6 +14,11 @@
       "title": "brown",
       "status": false,
       "id": 7
+    },
+    {
+      "title": "red",
+      "status": false,
+      "id": 8
     }
   ]
 }
